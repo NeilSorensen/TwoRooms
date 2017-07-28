@@ -32,10 +32,10 @@ namespace TwoRooms.Uwp
 
         private async void ButtonPressed(object sender, RoutedEventArgs e)
         {
-            var stream = await speechSynth.SynthesizeTextToStreamAsync("10 9 8 7 6 5 4 3 2 1");
-            Voice.SetSource(stream, stream.ContentType);
-            Voice.Play();
-            //Frame.Navigate(typeof(PlayerSelectPage));
+            //var stream = await speechSynth.SynthesizeTextToStreamAsync("10 9 8 7 6 5 4 3 2 1");
+            //Voice.SetSource(stream, stream.ContentType);
+            //Voice.Play();
+            Frame.Navigate(typeof(PlayerSelectPage));
         }
     }
 }

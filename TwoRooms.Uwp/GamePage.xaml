@@ -8,6 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <RichTextBlock Grid.Row="0" Margin="0,20" TextAlignment ="Center" HorizontalAlignment="Center" FontFamily="Arial" >
+            <Paragraph FontSize="28">
+                <Bold FontWeight="ExtraBlack">TWO ROOMS&#160;</Bold>
+                <Bold FontWeight="SemiBold" >AND A</Bold>
+            </Paragraph>
+            <Paragraph FontSize="80">
+                <Bold FontWeight="ExtraBold">BOOM</Bold>
+            </Paragraph>
+        </RichTextBlock>
         <MediaElement x:Name="Voice"></MediaElement>
+        <Button Grid.Row="1" HorizontalAlignment="Center" Padding="10" x:Name="RoundStartButton"  Click="RoundStartButton_Click">Start next round</Button>
     </Grid>
 </Page>

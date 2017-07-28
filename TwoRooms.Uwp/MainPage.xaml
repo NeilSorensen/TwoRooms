@@ -9,9 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <MediaElement x:Name="Voice"></MediaElement>
-        <RichTextBlock TextAlignment ="Center" HorizontalAlignment="Center" FontFamily="Arial" >
+        <RichTextBlock Margin="0,20" TextAlignment ="Center" HorizontalAlignment="Center" FontFamily="Arial" >
             <Paragraph FontSize="28">
-                <Bold FontWeight="ExtraBlack">TWO ROOMS</Bold>
+                <Bold FontWeight="ExtraBlack">TWO ROOMS&#160;</Bold>
                 <Bold FontWeight="SemiBold" >AND A</Bold></Paragraph>
             <Paragraph FontSize="80"><Bold FontWeight="ExtraBold">BOOM</Bold></Paragraph>
         </RichTextBlock>
