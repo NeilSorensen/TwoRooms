@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="TwoRooms.Uwp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TwoRooms.Uwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <MediaElement x:Name="Voice"></MediaElement>
+        <RichTextBlock TextAlignment ="Center" HorizontalAlignment="Center" FontFamily="Arial" >
+            <Paragraph FontSize="28">
+                <Bold FontWeight="ExtraBlack">TWO ROOMS</Bold>
+                <Bold FontWeight="SemiBold" >AND A</Bold></Paragraph>
+            <Paragraph FontSize="80"><Bold FontWeight="ExtraBold">BOOM</Bold></Paragraph>
+        </RichTextBlock>
+        
+        <Button HorizontalAlignment="Center" Click="ButtonPressed">Press Me</Button>
+    </Grid>
+</Page>
